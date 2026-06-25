@@ -101,7 +101,7 @@ curl -X POST "http://localhost:8000/ask" \
 
 ---
 
-## 🔧 Components Modified
+## 🔧 Components
 
 ### Core Pipeline Files
 - **rag/toc_parser.py** - Extracts hierarchical sections
@@ -155,37 +155,7 @@ Look for logs showing all 4 stages:
 
 ---
 
-## 📖 Documentation Guide
-
-### For Different Roles
-
-**Developers** → [FUNCTION_SIGNATURES_REFERENCE.md](FUNCTION_SIGNATURES_REFERENCE.md)
-- Complete API signatures
-- Parameter descriptions
-- Return formats
-- Integration points
-
-**Operation/Deployment** → [SYSTEM_SUMMARY_AND_NEXT_STEPS.md](SYSTEM_SUMMARY_AND_NEXT_STEPS.md)
-- Deployment instructions
-- Performance baselines
-- Troubleshooting guide
-- Next steps
-
-**Analysts/Business Users** → [DATA_FLOW_EXAMPLES.md](DATA_FLOW_EXAMPLES.md)
-- Real data examples
-- Request/response formats
-- Use cases and workflows
-- Expected outputs
-
-**QA/Testers** → [QUICK_START_CHECKLIST.md](QUICK_START_CHECKLIST.md)
-- Pre-flight verification
-- Test scenarios
-- Error diagnosis
-- Success indicators
-
----
-
-## 🎯 Expected Behavior
+## 🎯 Structured Behavior
 
 When you ask a question:
 
@@ -279,8 +249,6 @@ HF_TOKEN=<your-token>
 | Low faithfulness score | May indicate poor chunk selection - adjust top_k values |
 | Slow query times | First query may be slow while downloading models - subsequent queries faster |
 | API returns 500 error | Check terminal for error traceback |
-
-See [QUICK_START_CHECKLIST.md](QUICK_START_CHECKLIST.md) for detailed diagnostics.
 
 ---
 
